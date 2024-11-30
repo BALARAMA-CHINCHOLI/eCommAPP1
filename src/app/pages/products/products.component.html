@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <div class="row row-cols-2 row-cols-md-4 g-4 pt-3">
+        <div class="col-md-4">
+          <h5>Category</h5>
+          @for(category of categorys$(); track $index){
+          <button type="button" class="btn btn-success mt-2"
+            (click)="fetchAllProductsByCategoryId(category.categoryId)">{{category}}</button>
+          }
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="row row-cols-2 row-cols-md-4 g-4 pt-3">
+        @for(product of products$(); track $index){
+        <div class="col">
+          <div class="card h-100">
+            <img [src]="product.image" alt="{{ product.title }}" width="150">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <p>{{ product.description }}</p>
+            </div>
+            <div class="card-footer">
+              <p>Price: ${{ product.price }}</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
