@@ -1,4 +1,4 @@
-Document: This project is intended for learning, prototyping, and showcasing Angular 18 and is designed with Bootstrap, RxJS, and NgRx state management. Implemented features include add to cart. Dummy data is used for simulation and will be replaced by a real backend in the next step and Firebase deployment.
+Document: This project is intended for learning, prototyping, and showcasing Angular 18 and is designed with Bootstrap, RxJS, and NgRx state management. Implemented features include add to cart. Dummy data is used for simulation and Firebase deployment along with will be replaced by a real backend in the next step.
 
 # ECommAPP
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
